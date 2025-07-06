@@ -209,7 +209,11 @@ h6,
     vertical-align: middle;
     margin-left: 8px;
 }
-
+@media (max-width: 576px) {
+.logo{
+    width: 100px;
+}
+}
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
