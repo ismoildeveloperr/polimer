@@ -94,26 +94,29 @@
 
 
     // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            }
-        }
+
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // Отменить стандартную отправку
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
     });
+
+    if (response.ok) {
+      alert("✅ Сообщение отправлено успешно!");
+      form.reset();
+    } else {
+      alert("❌ Ошибка при отправке сообщения. Попробуйте ещё раз.");
+    }
+  });
 
     
 })(jQuery);

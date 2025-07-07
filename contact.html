@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Industro - Industrial HTML Template</title>
+    <title>Тех-полимер</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -220,37 +220,38 @@
         </div>
     </div>
     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-        <form>
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="name" placeholder="Ваше имя">
-                        <label for="name">Ваше имя</label>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="email" placeholder="Ваш email">
-                        <label for="email">Ваш email</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="subject" placeholder="Тема">
-                        <label for="subject">Тема</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Введите сообщение" id="message" style="height: 150px"></textarea>
-                        <label for="message">Сообщение</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-primary py-3 px-5" type="submit">Отправить</button>
-                </div>
-            </div>
-        </form>
+<form id="contact-form" action="https://formspree.io/f/mblyvrkr" method="POST">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
+        <label for="name">Ваше имя</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ваш email" required>
+        <label for="email">Ваш email</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="Тема">
+        <label for="subject">Тема</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-floating">
+        <textarea class="form-control" name="message" placeholder="Сообщение" id="message" style="height: 150px" required></textarea>
+        <label for="message">Сообщение</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary py-3 px-5" type="submit">Отправить</button>
+    </div>
+  </div>
+</form>
+
     </div>
 </div>
 
@@ -264,7 +265,7 @@
   <div class="container py-5">
     <div class="row g-5">
       <!-- Офис -->
-      <div class="col-lg-6 col-md-6">
+      <div class="col-lg-4 col-md-6">
         <h5 class="text-white mb-4">Наш офис</h5>
         <p class="mb-2">
           <i class="fa fa-map-marker-alt me-3"></i>г. Худжанд, ул. З.Тоҳирова
@@ -283,7 +284,7 @@
       </div>
 
       <!-- Быстрые ссылки -->
-      <div class="col-lg-6 col-md-6">
+      <div class="col-lg-4 col-md-6">
         <h5 class="text-white mb-4">Быстрые ссылки</h5>
         <a class="btn btn-link" href="#">О компании</a>
         <a class="btn btn-link" href="#">Контакты</a>
@@ -292,21 +293,18 @@
         <a class="btn btn-link" href="#">Поддержка</a>
       </div>
 
-      <!-- Время работы -->
-      <!-- <div class="col-lg-4 col-md-6">
-        <h5 class="text-white mb-4">Время работы</h5>
-        <p class="mb-1">Понедельник – Пятница</p>
-        <h6 class="text-light">09:00 – 18:00</h6>
-        <p class="mb-1">Суббота</p>
-        <h6 class="text-light">09:00 – 13:00</h6>
-        <p class="mb-1">Воскресенье</p>
-        <h6 class="text-light">Выходной</h6>
-      </div> -->
+      <div class="col-lg-4 col-md-6">
+         <iframe class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3047.141466852201!2d69.730189!3d40.20591599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDEyJzIxLjMiTiA2OcKwNDMnNDguNyJF!5e0!3m2!1sen!2s!4v1751871204681!5m2!1sen!2s"
+                    frameborder="0" style="height: 300px; width: 100%; border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+      </div>
 
-      <!-- Подписка -->
+     
     </div>
   </div>
 </div>
+
     <!-- Copyright End -->
 
 

@@ -13,7 +13,10 @@
     bottom: 30px;
     z-index: 99;
 }
-
+.dddd{
+    width: 550px !important;
+    height: 600px !important;
+}
 .logo{
     width: 150px;
 }
