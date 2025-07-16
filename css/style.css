@@ -839,6 +839,10 @@ h6,
     }
   }
 
+  .textblue{
+    font-weight: 600;
+    color: #02245B !important;
+  }
 /* Основное меню */
 .navbar-nav .dropdown-menu.mega-menu {
       display: none;
