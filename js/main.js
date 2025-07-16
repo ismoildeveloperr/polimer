@@ -92,6 +92,16 @@
         }
     });
 
+  function showDropdown(el) {
+    el.classList.add('show');
+    el.querySelector('.dropdown-menu').classList.add('show');
+  }
+
+  function hideDropdown(el) {
+    el.classList.remove('show');
+    el.querySelector('.dropdown-menu').classList.remove('show');
+  }
+
 
     // Testimonials carousel
 

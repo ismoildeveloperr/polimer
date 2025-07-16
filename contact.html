@@ -117,38 +117,38 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-       <div class="navbar-nav ms-auto p-4 p-lg-0">
-  <a href="index.html" class="nav-item nav-link">Главная</a>
+             <div class="navbar-nav ms-auto p-4 p-lg-0">
+  <a href="index.html" class="nav-item nav-link active" >Главная</a>
   <a href="about.html" class="nav-item nav-link">О нас</a>
 
   <!-- Продукция -->
-  <div class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Продукция</a>
-    <div class="dropdown-menu full-width">
-      <div class="row">
-        <div class="col-12 col-md-12 product-col">
-          <h6>Термоусадочные</h6>
-          <a href="p1.html" class="dropdown-item">Термоусадочные пленки для индивидуальной и <br> групповой упаковки</a>
-          <a href="p2.html" class="dropdown-item">Термоусадочная пленка «полурукав»</a>
-          <a href="p3.html" class="dropdown-item">Термоусадочная пленка «рукав»</a>
-          <a href="p4.html" class="dropdown-item">Термоусадочная пленка «полотно»</a>
-          <a href="p5.html" class="dropdown-item">Термоусадочная пленка «рукав с фальцем»</a>
-      <br>
-          <h6>Парниковые</h6>
-          <a href="p7.html" class="dropdown-item">Термостабилизированные парниковые плёнки</a>
-          <a href="p8.html" class="dropdown-item">Парниковая плёнка для клубники</a>
-          <a href="p9.html" class="dropdown-item">Плёнка для мульчирования (мульча-плёнка)</a>
-     
-        </div>
+  <div class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseleave="hideDropdown(this)">
+  <a href="service.html" class="nav-link dropdown-toggle" onclick="event.preventDefault(); window.location.href='service.html';" data-bs-toggle="dropdown">
+    Продукция
+  </a>
+  <div class="dropdown-menu full-width">
+    <div class="row">
+      <div class="col-12 col-md-12 product-col">
+        <h6>Термоусадочные</h6>
+        <a href="p1.html" class="dropdown-item">Термоусадочные пленки для индивидуальной и <br> групповой упаковки</a>
+        <a href="p2.html" class="dropdown-item">Термоусадочная пленка «полурукав»</a>
+        <a href="p3.html" class="dropdown-item">Термоусадочная пленка «рукав»</a>
+        <a href="p4.html" class="dropdown-item">Термоусадочная пленка «полотно»</a>
+        <a href="p5.html" class="dropdown-item">Термоусадочная пленка «рукав с фальцем»</a>
+        <br>
+        <h6>Парниковые</h6>
+        <a href="p7.html" class="dropdown-item">Термостабилизированные парниковые плёнки</a>
+        <a href="p8.html" class="dropdown-item">Парниковая плёнка для клубники</a>
+        <a href="p9.html" class="dropdown-item">Плёнка для мульчирования (мульча-плёнка)</a>
       </div>
     </div>
   </div>
-
-  <a href="news.html" class="nav-item nav-link">Новости</a>
-  <a href="contact.html" class="nav-item nav-link active">Контакты</a>
 </div>
 
 
+  <a href="news.html" class="nav-item nav-link">Новости</a>
+  <a href="contact.html" class="nav-item nav-link ">Контакты</a>
+</div>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -247,7 +247,7 @@
         </div>
     </div>
     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-<form id="contact-form" action="https://formspree.io/f/mblyvrkr" method="POST">
+<form id="contact-form" action="https://formspree.io/f/xrblglre" method="POST">
   <div class="row g-3">
     <div class="col-md-6">
       <div class="form-floating">
