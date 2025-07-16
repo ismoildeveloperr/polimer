@@ -219,6 +219,9 @@ h6,
 .product-col {
     font-size: 13px;
 }
+.pe-5 {
+    padding-right: 4rem !important;
+}
 }
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
