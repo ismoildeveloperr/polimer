@@ -114,7 +114,11 @@
 
   <!-- Продукции -->
   <div class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseleave="hideDropdown(this)">
-  <a href="service.html" class="nav-link dropdown-toggle" onclick="event.preventDefault(); window.location.href='service.html';" data-bs-toggle="dropdown">
+  <a href="service.html"
+     class="nav-link dropdown-toggle"
+     onclick="handleDropdownClick(event, this)"
+     data-bs-toggle="dropdown"
+     id="productLink">
     Продукции
   </a>
   <div class="dropdown-menu full-width">
