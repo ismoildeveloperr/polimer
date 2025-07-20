@@ -92,16 +92,31 @@
         }
     });
 
-  function showDropdown(el) {
-    el.classList.add('show');
-    el.querySelector('.dropdown-menu').classList.add('show');
-  }
+ let dropdownClicked = false;
 
-  function hideDropdown(el) {
-    el.classList.remove('show');
-    el.querySelector('.dropdown-menu').classList.remove('show');
-  }
+  function handleDropdownClick(event, element) {
+    const parent = element.closest('.dropdown');
+    const dropdownMenu = parent.querySelector('.dropdown-menu');
 
+    if (!dropdownClicked) {
+      event.preventDefault(); // не переходим по ссылке
+      dropdownMenu.classList.add('show'); // показываем меню
+      dropdownClicked = true;
+
+      // Закрыть меню при клике вне
+      document.addEventListener('click', function docClick(e) {
+        if (!parent.contains(e.target)) {
+          dropdownMenu.classList.remove('show');
+          dropdownClicked = false;
+          document.removeEventListener('click', docClick);
+        }
+      });
+
+    } else {
+      // второй клик — переход на страницу
+      window.location.href = element.getAttribute('href');
+    }
+  }
 
     // Testimonials carousel
 
